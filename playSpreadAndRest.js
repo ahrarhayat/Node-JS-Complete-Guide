@@ -24,3 +24,15 @@ console.log(arrayWithSpread);
 
 //use of spread operator to copy an object
 
+const person = 
+{
+    name: "Ahrar",
+    age:  27,
+    greet()
+    {
+        console.log('Hi '+ 'my name is '+this.name);
+    }
+};
+const personNew = {...person};
+console.log(personNew);
+personNew.greet();
