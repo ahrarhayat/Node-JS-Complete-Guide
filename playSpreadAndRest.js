@@ -36,3 +36,21 @@ const person =
 const personNew = {...person};
 console.log(personNew);
 personNew.greet();
+
+
+//toArray without REST
+const toArray = (arg1,arg2,arg3) =>
+{
+    return [arg1,arg2,arg3];
+};
+
+console.log(toArray('a','b','c'));
+
+//toArray without REST operator
+
+const toArrayRest = (...args) =>
+{
+    return [args];
+};
+
+console.log(toArrayRest('a','b','c','d'));
