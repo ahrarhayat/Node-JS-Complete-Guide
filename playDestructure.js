@@ -13,7 +13,7 @@ const person =
 
 
 
-//using destructuring, the name attribute will be extracted
+//using destructuring, the name attribute will be extracted from the object
 const printName = ({name}) => {
     console.log(name);
 }
@@ -30,3 +30,9 @@ printAll(person);
 
 const {age,name} = person;
 console.log(name,age);
+
+//destructuring arrays
+
+const hobbies = ['Gym','Cooking','Eating'];
+const [hobby1,hobby2,hobby3] = hobbies;
+console.log(hobby1,hobby2,hobby3);
